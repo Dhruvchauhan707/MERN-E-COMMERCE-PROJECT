@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/user/LatestProducts.css';
 import ProductCard from '../../components/user/ProductCard';
+import { Link } from 'react-router-dom';
 
 const LatestProducts = ({ products }) => {
   const [wishlist, setWishlist] = useState([]);
@@ -21,7 +22,7 @@ const LatestProducts = ({ products }) => {
             <p>Discover our newest arrivals</p>
           </div>
           <button className="view-all-btn">
-            View All Products →
+            <Link to="/shop">View All Products →</Link>
           </button>
         </div>
       </div>

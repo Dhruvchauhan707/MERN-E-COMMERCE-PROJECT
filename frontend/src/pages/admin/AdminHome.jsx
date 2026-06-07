@@ -36,7 +36,7 @@ const AdminHome = () => {
     try {
 
       const { data } = await axios.get(
-        "http://localhost:3000/api/dashboard/stats"
+        "https://mern-e-commerce-project-mlyd.onrender.com/api/dashboard/stats"
       );
 
       setDashboardStats(data);
@@ -245,7 +245,7 @@ const {
 
       try {
         const { data } = await axios.get(
-          "http://localhost:3000/api/categories/"
+          "https://mern-e-commerce-project-mlyd.onrender.com/api/categories/"
         );
         setCategories(data);
 
@@ -260,7 +260,7 @@ const {
   const handleAddCategory = async (formData) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/categories/",
+        "https://mern-e-commerce-project-mlyd.onrender.com/api/categories/",
         formData,
         {
           withCredentials: true,
@@ -285,7 +285,7 @@ const {
 
     try {
       await axios.delete(
-        `http://localhost:3000/api/categories/${id}`,
+        `https://mern-e-commerce-project-mlyd.onrender.com/api/categories/${id}`,
         {
           withCredentials: true,
         }

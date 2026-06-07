@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../styles/user/Categories.css';
+import { Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Categories = ({ categories }) => {
 
@@ -12,12 +14,16 @@ const Categories = ({ categories }) => {
             <p>Shop by your favorite categories</p>
           </div>
           <button className="view-all-btn">
-            View All Categories →
+            <Link to="/categories">View All Categories →</Link>
           </button>
         </div>
       </div>
 
-      <div className="categories-grid">
+      <div className="categories-grid"
+      onClick={() =>
+        navigate(`/categories/`)
+      }
+      >
         {categories.map((category, index) => (
           <div className="category-card" key={index}>
             <img src={category.image} alt={category.name} />
