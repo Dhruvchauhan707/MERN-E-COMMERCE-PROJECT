@@ -245,7 +245,7 @@ const {
 
       try {
         const { data } = await axios.get(
-          `${process.env.REACT_APP_API_URL}+/api/categories/`
+          `${import.meta.env.VITE_API_URL}+/api/categories/`
         );
         setCategories(data);
 
@@ -260,7 +260,7 @@ const {
   const handleAddCategory = async (formData) => {
     try {
       const { data } = await axios.post(
-        `${process.env.REACT_APP_API_URL}+/api/categories/`,
+        `${import.meta.env.VITE_API_URL}+/api/categories/`,
         formData,
         {
           withCredentials: true,
@@ -285,7 +285,7 @@ const {
 
     try {
       await axios.delete(
-        `${process.env.REACT_APP_API_URL}+/api/categories/${id}`,
+        `${import.meta.env.VITE_API_URL}+/api/categories/${id}`,
         {
           withCredentials: true,
         }
