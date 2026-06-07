@@ -245,7 +245,7 @@ const {
 
       try {
         const { data } = await axios.get(
-          "https://mern-e-commerce-project-mlyd.onrender.com/api/categories/"
+          `${process.env.REACT_APP_API_URL}+/api/categories/`
         );
         setCategories(data);
 
@@ -260,7 +260,7 @@ const {
   const handleAddCategory = async (formData) => {
     try {
       const { data } = await axios.post(
-        "https://mern-e-commerce-project-mlyd.onrender.com/api/categories/",
+        `${process.env.REACT_APP_API_URL}+/api/categories/`,
         formData,
         {
           withCredentials: true,
@@ -285,7 +285,7 @@ const {
 
     try {
       await axios.delete(
-        `https://mern-e-commerce-project-mlyd.onrender.com/api/categories/${id}`,
+        `${process.env.REACT_APP_API_URL}+/api/categories/${id}`,
         {
           withCredentials: true,
         }
