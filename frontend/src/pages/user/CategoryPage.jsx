@@ -4,8 +4,8 @@ import '../../styles/user/CategoryPage.css';
 import { FaSortAmountDown } from 'react-icons/fa';
 import Footer from '../../components/user/Footer';
 import ProductCard from "../../components/user/ProductCard";
-import { useCategories } from '../../hooks/useCategories';
-import { useProducts } from '../../hooks/useProducts';
+import { useCategories } from '../../Hooks/useCategories';
+import { useProducts } from '../../Hooks/useProducts';
 import Loader from '../../components/common/Loader';
 
 const CategoryPage = () => {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/user/CheckoutPage.css';
-import { useAddress } from "../../hooks/useAddress";
-import { useCheckout } from "../../hooks/useCheckout";
-import { useCart } from "../../hooks/useCart";
+import { useAddress } from "../../Hooks/useAddress";
+import { useCheckout } from "../../Hooks/useCheckout";
+import { useCart } from "../../Hooks/useCart";
 import AddressModal from '../../components/user/AddressModal';
 import { Link } from 'react-router-dom';
 import { FaArrowLeft, FaCreditCard, FaQrcode, FaMoneyBillWave, FaTruck } from 'react-icons/fa';

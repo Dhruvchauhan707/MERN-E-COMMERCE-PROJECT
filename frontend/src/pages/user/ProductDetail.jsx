@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/user/ProductDetail.css';
 import { useParams } from "react-router-dom";
-import { useProducts } from "../../hooks/useProducts";
+import { useProducts } from "../../Hooks/useProducts";
 import { useCart } from '../../Hooks/useCart';
 import { toast } from "react-toastify";
 import Footer from '../../components/user/Footer';

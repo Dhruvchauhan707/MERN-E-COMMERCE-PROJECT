@@ -3,8 +3,8 @@ import ProductCard from '../../components/user/ProductCard';
 import '../../styles/user/shop.css';
 import Footer from '../../components/user/Footer';
 
-import { useProducts } from '../../hooks/useProducts';
-import { useCategories } from '../../hooks/useCategories';
+import { useProducts } from '../../Hooks/useProducts';
+import { useCategories } from '../../Hooks/useCategories';
 import Loader from '../../components/common/Loader';
 
 const Shop = () => {

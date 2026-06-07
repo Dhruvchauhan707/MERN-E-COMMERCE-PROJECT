@@ -2,7 +2,7 @@
 import React from 'react';
 import '../../styles/user/cart.css';
 import { FaTrash, FaArrowRight } from 'react-icons/fa';
-import { useCart } from '../../hooks/useCart';
+import { useCart } from '../../Hooks/useCart';
 import { Link } from 'react-router-dom';
 import Loader from '../../components/common/Loader'
 

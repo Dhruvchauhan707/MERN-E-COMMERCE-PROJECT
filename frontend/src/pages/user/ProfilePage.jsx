@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/user/ProfilePage.css';
 import axios from "axios";
-import { useAddress } from "../../hooks/useAddress";
-import { useProfile } from "../../hooks/useProfile";
-import { useOrders } from "../../hooks/useOrders";
+import { useAddress } from "../../Hooks/useAddress";
+import { useProfile } from "../../Hooks/useProfile";
+import { useOrders } from "../../Hooks/useOrders";
 import AddressModal
   from "../../components/user/AddressModal";
 import { FaUser, FaShoppingBag, FaHeart, FaMapMarkerAlt, FaCog, FaSignOutAlt } from 'react-icons/fa';
