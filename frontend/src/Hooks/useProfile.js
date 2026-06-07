@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { authApi } from "../api/authApi";
+import { authApi } from "../Api/authApi";
 
 export const useProfile = () => {
 

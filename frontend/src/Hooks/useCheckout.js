@@ -1,6 +1,6 @@
 // src/hooks/useCheckout.js
 
-import { orderApi } from "../api/orderApi";
+import { orderApi } from "../Api/orderApi";
 
 export const useCheckout = () => {
 

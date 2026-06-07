@@ -1,6 +1,6 @@
 // src/hooks/useProducts.js
 import { useState, useEffect } from 'react';
-import { productApi } from '../api/productApi';
+import { productApi } from '../Api/productApi';
 
 export const useProducts = () => {
     const [products, setProducts] = useState([]);

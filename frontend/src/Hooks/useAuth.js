@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { authApi } from "../api/authApi";
+import { authApi } from "../Api/authApi";
 import { Navigate } from "react-router-dom";
 import { toast } from "react-toastify";
 

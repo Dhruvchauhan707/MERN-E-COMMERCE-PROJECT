@@ -1,7 +1,5 @@
-// src/Hooks/useUsers.js
-
 import { useState, useEffect } from "react";
-import { userApi } from "../api/userApi";
+import { userApi } from "../Api/userApi";
 
 export const useUsers = () => {
 

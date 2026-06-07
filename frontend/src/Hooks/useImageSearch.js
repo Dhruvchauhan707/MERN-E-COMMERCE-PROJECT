@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { imageSearchApi } from "../api/imageSearchApi";
+import { imageSearchApi } from "../Api/imageSearchApi";
 
 export const useImageSearch = () => {
 

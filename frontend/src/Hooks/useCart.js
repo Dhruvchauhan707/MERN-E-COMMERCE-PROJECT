@@ -1,6 +1,6 @@
 // src/hooks/useCart.js
 import { useState, useEffect } from 'react';
-import { cartApi } from '../api/cartApi';
+import { cartApi } from '../Api/cartApi';
 
 export const useCart = () => {
   const [cartItems, setCartItems] = useState([]);
