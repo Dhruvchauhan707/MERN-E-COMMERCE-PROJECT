@@ -25,7 +25,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-   origin: "https://myshop-mernapp.netlify.app/",
+   origin: "https://myshop-mernapp.netlify.app",
    credentials: true,
 }));
 
