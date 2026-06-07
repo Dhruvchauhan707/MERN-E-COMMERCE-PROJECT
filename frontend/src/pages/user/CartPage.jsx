@@ -1,6 +1,6 @@
 // src/components/user/CartPage.jsx
 import React from 'react';
-import '../../styles/user/Cart.css';
+import '../../styles/user/cart.css';
 import { FaTrash, FaArrowRight } from 'react-icons/fa';
 import { useCart } from '../../hooks/useCart';
 import { Link } from 'react-router-dom';

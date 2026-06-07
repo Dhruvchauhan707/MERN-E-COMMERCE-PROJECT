@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProductCard from '../../components/user/ProductCard';
-import '../../styles/user/Shop.css';
+import '../../styles/user/shop.css';
 import Footer from '../../components/user/Footer';
 
 import { useProducts } from '../../hooks/useProducts';
