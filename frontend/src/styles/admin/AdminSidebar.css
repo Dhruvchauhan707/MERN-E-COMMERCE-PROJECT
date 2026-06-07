@@ -1,0 +1,126 @@
+.admin-sidebar {
+  width: 260px;
+  min-width: 260px;
+  background-color: #1e293b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.admin-sidebar.collapsed {
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+.sidebar-brand {
+  padding: 20px;
+  text-align: center;
+  background-color: #0f172a;
+  font-size: 14px;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 20px 0;
+  white-space: nowrap;
+}
+.sidebar-menu li {
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: #cbd5e1;
+}
+.sidebar-menu li:hover {
+  background-color: #334155;
+  color: #fff;
+  padding-left: 30px;
+}
+.sidebar-menu li.active {
+  background-color: #2563eb;
+  color: #fff;
+  font-weight: bold;
+  border-left: 5px solid #60a5fa;
+}
+
+
+/* --- SIDEBAR FLEXBOX LAYOUT (Make sure parent is flex column) --- */
+.admin-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Pura vertical screen cover karega */
+  background-color: #1e293b;
+  color: #fff;
+}
+
+/* --- SIDEBAR FOOTER (BOTTOM SECTION) --- */
+.sidebar-footer {
+  margin-top: auto; /* ✨ JADU: Isse ye section automatic scroll/push hokar ekdam neeche chala jayega */
+  padding: 20px;
+  background-color: #0f172a; /* Thoda dark background contrast ke liye */
+  border-top: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* User Profile Card inside Sidebar */
+.sidebar-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar-mini {
+  width: 35px;
+  height: 35px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.user-role {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* Sleek Modern Logout Button */
+.sidebar-logout-btn {
+  width: 100%;
+  background-color: #ef4444; /* Premium Red */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+  font-size: 14px;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Jab sidebar collapsed ho tab footer bhi smooth chhip jaye */
+.admin-sidebar.collapsed .sidebar-footer {
+  display: none;
+}

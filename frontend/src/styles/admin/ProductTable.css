@@ -1,0 +1,287 @@
+/* ==========================================================================
+   📦 1. RESPONSIVE TABLE STYLES
+   ========================================================================== */
+.table-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  margin-top: 15px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  overflow-x: auto; /* Force horizontal scrollbar on mobile screens */
+  -webkit-overflow-scrolling: touch; 
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 650px; /* Table ko pichakne se rokta hai */
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px 15px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.admin-table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.table-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Stock Badges */
+.stock-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.stock-badge.in-stock {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.stock-badge.low-stock {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Actions Column Alignment */
+.admin-table td:last-child {
+  white-space: nowrap;
+  width: 130px;
+  min-width: 130px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 4px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.action-btn:hover {
+  background-color: #f1f5f9;
+}
+
+
+/* ==========================================================================
+   🚨 2. RESPONSIVE POP-UP MODAL STYLES (WITH EDIT BUTTON)
+   ========================================================================== */
+
+/* Modal Overlay Layer */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px); /* Premium blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Modal Content White Box */
+.modal-content {
+  background: #ffffff;
+  width: 550px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh; /* Mobile par screen se bahar na jaye container */
+  animation: slideUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-header h3 {
+  color: #1e293b;
+  margin: 0;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #94a3b8;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close-modal-btn:hover {
+  color: #ef4444;
+}
+
+/* Modal Body Inner Content Layout */
+.modal-body {
+  padding: 25px;
+  display: flex;
+  gap: 25px;
+}
+
+.modal-img-container {
+  flex: 1;
+  min-width: 150px;
+  max-width: 180px;
+}
+
+.modal-img-container img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.modal-info {
+  flex: 2;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-info h2 {
+  color: #0f172a;
+  font-size: 22px;
+  margin: 0;
+}
+
+.modal-category {
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.modal-info hr {
+  border: none;
+  border-top: 1px solid #f1f5f9;
+  margin: 5px 0;
+}
+
+.modal-info p {
+  font-size: 14px;
+  color: #475569;
+  margin: 0;
+}
+
+.modal-price {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Modal Inside Edit Button */
+.modal-edit-btn {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.modal-edit-btn:hover {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* ==========================================================================
+   📱 3. MOBILE RESPONSIVE MEDIA QUERY FOR MODAL
+   ========================================================================== */
+@media (max-width: 550px) {
+  .modal-body {
+    flex-direction: column; /* Mobile par image upar aur text niche scroll hoga */
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .modal-img-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .modal-img-container img {
+    height: 200px; /* Mobile par image responsive adjust hogi */
+  }
+
+  .modal-info {
+    width: 100%;
+  }
+  
+  .modal-edit-btn {
+    width: 100%; /* Mobile screen par pura stretch ho jayega tap karne ke liye */
+    text-align: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-edit-btn{
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+
+.modal-edit-btn:hover {
+  background: #6b21a8;
+  color: white;
+  transform: scale(1.05);
+}

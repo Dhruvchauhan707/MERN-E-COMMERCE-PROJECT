@@ -1,0 +1,157 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+/* Logo, Search, Links, Icons - Same as before */
+.logo h2 {
+  color: #e60023;
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 320px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 9px 15px;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  font-size: 0.98rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e60023;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-btn {
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* ==================== FULL SCREEN MOBILE MENU ==================== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+  display: flex;
+}
+
+.mobile-menu-content {
+  padding: 80px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.mobile-menu-content a {
+  padding: 16px 20px;
+  font-size: 1.35rem;
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s;
+}
+
+.mobile-menu-content a:hover {
+  background-color: #f8f9fa;
+  padding-left: 30px;
+}
+
+.mobile-extra-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-extra-links a {
+  font-size: 1.2rem;
+  padding: 14px 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links,
+  .nav-icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .search-bar {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 1.6rem;
+  }
+}

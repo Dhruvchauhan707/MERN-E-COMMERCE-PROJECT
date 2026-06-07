@@ -1,0 +1,55 @@
+FEAUTER OF SITE
+
+User Side:
+Signup/Login
+JWT Authentication
+Product listing
+Search/filter
+Category wise products
+Product details page
+Cart
+Wishlist
+Checkout
+Orders
+User profile
+Reviews/Ratings
+
+
+Admin Side:
+Add/Edit/Delete products
+Manage orders
+Manage users
+Dashboard analytics
+Inventory management
+
+
+Advanced Feature (Main Highlight)
+AI Image Search
+Flow
+User image upload kare
+Backend image process kare
+AI similar products identify kare
+Matching products MongoDB se fetch ho
+
+
+how to implement
+Use AI APIs		
+
+https://cloud.google.com/vision?utm_source=chatgpt.com
+https://cloudinary.com/documentation/image_analysis?utm_source=chatgpt.com
+
+AI image me:
+
+(shoes,shirt...)
+
+detect karega.
+
+Phir tum tags ke basis pe MongoDB se products search kar sakte ho.
+
+Example
+
+Image → “red sneaker”
+
+Product.find({
+ tags: { $in: ["sneaker", "red"] }
+})

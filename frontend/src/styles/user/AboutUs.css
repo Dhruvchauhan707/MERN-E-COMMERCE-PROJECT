@@ -1,0 +1,155 @@
+.about-us-classic {
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+  color: #333;
+  background: #f8f5f0;
+}
+
+/* Hero */
+.classic-hero {
+  height: 65vh;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+              url('https://images.unsplash.com/photo-1586528116311-ad8dd3c83137?w=1600') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 4.2rem;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Sections */
+.intro-section {
+  background: white;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 1.35rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* Story */
+.story-section {
+  background: #f8f5f0;
+}
+
+.story-section h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+.story-content p {
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* Values */
+.values-section {
+  background: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.value-card {
+  background: #f8f5f0;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid #e5d9c0;
+  transition: all 0.3s;
+}
+
+.value-card:hover {
+  border-color: #b38b5d;
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  font-size: 2.2rem;
+  color: #b38b5d;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.value-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+/* Quote */
+.quote-section {
+  background: #2c2c2c;
+  color: #e5d9c0;
+  text-align: center;
+}
+
+.quote-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.quote-text {
+  font-size: 1.45rem;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.quote-author {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* Closing */
+.closing-section {
+  background: white;
+  text-align: center;
+}
+
+.classic-btn {
+  margin-top: 30px;
+  padding: 14px 45px;
+  font-size: 1.1rem;
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: 'Georgia', serif;
+}
+
+.classic-btn:hover {
+  background: #b38b5d;
+  color: white;
+}

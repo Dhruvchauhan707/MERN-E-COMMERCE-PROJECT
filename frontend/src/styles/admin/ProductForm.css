@@ -1,0 +1,109 @@
+.product-form-container {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  margin-bottom: 30px;
+}
+.product-form-container h3 {
+  margin-bottom: 20px;
+  color: #1e293b;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+.form-group input, .form-group select {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+.form-group input:focus, .form-group select:focus {
+  border-color: #2563eb;
+}
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.save-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cancel-btn {
+  background-color: #94a3b8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Form Header Layout */
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Arrow aur Text ke beech ka gap */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 15px;
+}
+
+/* Form Container ke andar purani h3 margin hatayein kyunki ab header control kar raha hai */
+.product-form-container h3 {
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  color: #1e293b;
+}
+
+/* Modern Circular Back Button */
+.back-btn {
+  background-color: #ff710b;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* Isse button gol (circle) ho jayega */
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.back-btn:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+  transform: translateX(-3px); /* Halka sa left side pull hoga, back ka signal dene ke liye */
+}
+
+/* Click effect */
+.back-btn:active {
+  transform: scale(0.95);
+}

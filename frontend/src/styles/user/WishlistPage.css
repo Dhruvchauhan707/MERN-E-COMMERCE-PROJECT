@@ -1,0 +1,154 @@
+.wishlist-page {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.wishlist-header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: rgb(250, 92, 13);
+  padding: 20px 20px;
+  border-radius: 12px;
+}
+
+.wishlist-header h1 {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.wishlist-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Empty State */
+.empty-wishlist {
+  text-align: center;
+  padding: 80px 20px;
+  color: #777;
+}
+
+.empty-wishlist h2 {
+  margin: 20px 0 10px;
+}
+
+.shop-now-btn {
+  margin-top: 25px;
+  padding: 14px 40px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Wishlist Grid */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  background: #e5d9c0;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.wishlist-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #e74c3c;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Card Content */
+.card-content {
+  padding: 18px;
+}
+
+.card-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.price-section {
+  margin: 10px 0;
+}
+
+.current-price {
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.rating {
+  color: #f1c40f;
+  margin-bottom: 15px;
+}
+
+/* Actions */
+.move-to-cart-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.move-to-cart-btn:hover {
+  background: #c0392b;
+}

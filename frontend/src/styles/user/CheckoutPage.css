@@ -1,0 +1,161 @@
+.checkout-page {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.checkout-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.checkout-header h1 {
+  margin: 0;
+}
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  width: fit-content;
+  white-space: nowrap;
+
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.back-btn:hover {
+  color: #e74c3c;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 30px;
+}
+
+/* Mobile pe stack ho jayega */
+@media (max-width: 992px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+  .checkout-left, .checkout-right {
+    width: 100%;
+  }
+}
+
+/* Left Side */
+.checkout-left {
+  flex: 2;
+}
+
+.checkout-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.address-card, .delivery-card, .payment-card {
+  padding: 15px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.address-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.address-card div {
+  flex: 1;
+}
+
+.address-card.selected,
+.delivery-card.selected,
+.payment-card.selected {
+  border-color: #e74c3c;
+  background: #fff5f5;
+}
+
+/* Right Side - Order Summary */
+.checkout-right {
+  flex: 1;
+}
+
+.order-summary {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  position: sticky;
+  top: 20px;
+}
+
+.summary-item, .summary-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.final-total {
+  font-size: 1.35rem;
+  margin: 20px 0;
+  padding-top: 15px;
+  border-top: 2px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+.add-new-btn{
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 16px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 576px) {
+  .checkout-section {
+    padding: 18px 15px;
+  }
+  
+  .address-card, .delivery-card, .payment-card {
+    padding: 14px;
+  }
+}

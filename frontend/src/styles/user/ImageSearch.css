@@ -1,0 +1,119 @@
+.image-search-page {
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.search-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.search-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.upload-box {
+  width: 450px;
+  height: 300px;
+  border: 3px dashed #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #000;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-box span {
+  font-size: 4rem;
+}
+
+.upload-box h3 {
+  margin-top: 10px;
+}
+
+.upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-btn {
+  padding: 14px 35px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-btn:hover {
+  opacity: 0.9;
+}
+
+.results-section h2 {
+  margin-bottom: 25px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.empty-state h3 {
+  margin-bottom: 10px;
+}
+
+.loading-state,
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.loading-state h3,
+.empty-state h3 {
+  margin-bottom: 10px;
+}
+
+.loading-state p,
+.empty-state p {
+  color: #666;
+}

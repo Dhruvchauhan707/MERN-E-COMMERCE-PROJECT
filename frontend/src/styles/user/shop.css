@@ -1,0 +1,118 @@
+.shop-page {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 50px;
+  background: rgb(250, 92, 13);
+  margin-top: 0;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+.shop-header h1 {
+  font-size: 2.8rem;
+  color: #222;
+}
+
+.shop-container {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top:0;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  background-color: #fff5f5;
+  border-radius: 12px;
+}
+
+/* Filters */
+.filters-sidebar {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 80px;
+}
+
+.filters-sidebar h3 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group h4 {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.filter-label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+/* Products Area */
+.products-area {
+  width: 100%;
+}
+
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #666;
+  padding: 60px 20px;
+}
+
+/* Products Grid - Gap badhaya */
+.products-line {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px 20px;           /* left-right: 25px, up-down: 20px */
+  row-gap: 45px;            /* ← Yeh line important hai (vertical gap) */
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;               /* Equal height ke liye */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Agar aap ProductCard.css mein bhi gap add karna chahein to yeh bhi add kar sakte ho */
+.product-card {
+  margin-bottom: 20px;        /* Extra safety ke liye */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .shop-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .filters-sidebar {
+    position: static;
+  }
+}
