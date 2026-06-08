@@ -1,0 +1,27 @@
+# 🛒 MERN E-Commerce Platform
+
+This is a full-stack e-commerce web application built using the MERN Stack. The main highlight of this project is the Image-Based Product Search feature, which allows users to upload an image and find relevant products.
+
+## Features
+
+- User Authentication (JWT)
+- Product Management
+- Image-Based Product Search
+- Shopping Cart Functionality
+- Order Management
+- Responsive UI
+
+## Tech Stack
+
+Frontend: React.js, CSS, Axios
+Backend: Node.js, Express.js
+Database: MongoDB
+Authentication: JWT, bcrypt
+
+## What I Learned
+
+- Building REST APIs with Express.js
+- MongoDB database design and integration
+- JWT Authentication and Authorization
+- Frontend-Backend communication using Axios
+- Deploying full-stack applications
